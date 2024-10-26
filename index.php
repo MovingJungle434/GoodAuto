@@ -320,7 +320,7 @@
     <footer>
         <h1 id="contact" style="visibility: hidden;">Feel free to write, call, and visit us. We really love to
             communicate with our clients.</h1>
-        <h2 id="contact1" style="visibility: hidden;">50-201, 10152. Vesivärava Street Tallinn, Estonia</h2>
+        <h2 id="contact1" style="visibility: hidden;">Гефестион ЕООД</h2>
     </footer>
     <script src="/js/onscroll.js"></script>
     <script src="/js/slider.js"></script>
