@@ -928,7 +928,6 @@ span {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: 20px;
     margin-top: -22px;
     padding: 10px !important;
     color: white;
