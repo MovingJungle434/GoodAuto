@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoodAuto</title>
+    <title>Gefestion</title>
+    <link rel="shortcut icon" href="/image/6937158.jpg" type="image/x-icon">
     <link rel="stylesheet" href="/css/scss.css">
-    <link rel="shortcut icon" href="/image/Rater_Group_Logo_2.png" type="image/x-icon">
 </head>
 
 <body>

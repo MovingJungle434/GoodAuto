@@ -53,6 +53,9 @@ if (window.innerWidth > 716) {
         if (document.documentElement.scrollTop > 5500) {
             document.getElementById("contact1").classList = "sliderDown"
         }
+        if (document.documentElement.scrollTop > 5500) {
+            document.getElementById("contact2").classList = "sliderDown"
+        }
     }
 } else {
     function myFunction() {
@@ -106,6 +109,9 @@ if (window.innerWidth > 716) {
         }
         if (document.documentElement.scrollTop > 7500) {
             document.getElementById("contact1").classList = "sliderDown"
+        }
+        if (document.documentElement.scrollTop > 7500) {
+            document.getElementById("contact2").classList = "sliderDown"
         }
     }
 }

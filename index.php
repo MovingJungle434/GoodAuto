@@ -1,12 +1,12 @@
-<?php require_once ("include/db.php"); ?>
+<?php require_once("include/db.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoodAuto</title>
-    <link rel="shortcut icon" href="/image/Rater_Group_Logo_2.png" type="image/x-icon">
+    <title>Gefestion</title>
+    <link rel="shortcut icon" href="/image/6937158.jpg" type="image/x-icon">
     <link rel="stylesheet" href="/css/scss.css">
     <script src="/js/onscroll.js" defer></script>
 </head>
@@ -18,7 +18,7 @@
     <header>
         <div class="container">
             <div class="header_img">
-                 <img src="/image/82a6e4ff8ed166816a62193497fd3e15.jpg" alt="">
+                <img src="/image/82a6e4ff8ed166816a62193497fd3e15.jpg" alt="">
             </div>
             <hr>
             <div class="header_div">
@@ -321,6 +321,7 @@
         <h1 id="contact" style="visibility: hidden;">Feel free to write, call, and visit us. We really love to
             communicate with our clients.</h1>
         <h2 id="contact1" style="visibility: hidden;">Гефестион ЕООД</h2>
+        <h2 id="contact2" style="visibility: hidden;">+359886172155</h2>
     </footer>
     <script src="/js/onscroll.js"></script>
     <script src="/js/slider.js"></script>

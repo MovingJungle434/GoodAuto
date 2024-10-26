@@ -455,7 +455,8 @@ footer h1 {
 }
 footer h2 {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 20px;
+  padding: 0px 0px 15px 0px;
 }
 
 .add {
