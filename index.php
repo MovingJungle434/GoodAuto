@@ -18,7 +18,7 @@
     <header>
         <div class="container">
             <div class="header_img">
-                <img src="/image/Rater_Group_Logo_2.png" alt="">
+                 <img src="/image/82a6e4ff8ed166816a62193497fd3e15.jpg" alt="">
             </div>
             <hr>
             <div class="header_div">
