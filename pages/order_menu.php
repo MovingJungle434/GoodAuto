@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gefestion</title>
-    <link rel="shortcut icon" href="/image/6937158.jpg" type="image/x-icon">
+    <title>GoodAuto</title>
+    <link rel="shortcut icon" href="/image/Rater_Group_Logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/scss.css">
 </head>
 
 <body>
     <?php require_once ("../include/db.php");
     $id = $_REQUEST['id'];
-    $cars = mysqli_query($esql, "SELECT * FROM `cars` WHERE `id` = '$id'");
+    $cars = mysqli_query(mysql: $esql, query: "SELECT * FROM `cars` WHERE `id` = '$id'");
     foreach ($cars as $car) { ?>
         <section class="menu">
             <div class="show_more_close">

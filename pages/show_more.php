@@ -10,7 +10,10 @@
 </head>
 
 <body>
-    <?php require_once ("../include/db.php");
+    <div class="loader"></div>
+    <div class="back"></div>
+    
+    <?php require_once("../include/db.php");
     $id = $_REQUEST['id']; ?>
     <section class="show_more">
         <div class="show_more_close">
@@ -106,6 +109,7 @@
             </div>
         </div>
     </section>
+    <script src="/js/loader.js"></script>
     <script src="https://kit.fontawesome.com/3e6f2e281b.js" crossorigin="anonymous"></script>
     <script src="/js/slider.js"></script>
 </body>

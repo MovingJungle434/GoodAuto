@@ -288,7 +288,7 @@ header hr {
 .show .container .sliderDown .show_right_img {
   text-align: center;
 }
-.show .container .show_right {
+.show .container .sliderUp {
   margin: 0px auto;
 }
 
@@ -986,6 +986,69 @@ span {
     padding: 250px 0px 0px 0px;
   }
 }
+.back {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.back.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.loader {
+  background-color: black;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  background: linear-gradient(90deg, #000 50%, rgba(0, 0, 0, 0) 0) right/200% 100%;
+  animation: l21 2s infinite linear;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.loader::before {
+  content: "Loading...";
+  color: rgba(0, 0, 0, 0);
+  padding: 0 5px;
+  background: inherit;
+  background-image: linear-gradient(90deg, #fff 50%, #000 0);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes l21 {
+  100% {
+    background-position: left;
+  }
+}
+.back.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
 @media screen and (max-width: 716px) {
   .np_menu {
     width: 75% !important;
@@ -1034,6 +1097,31 @@ span {
   .roll .sliderDown .child {
     max-width: 100% !important;
   }
+  .car {
+    padding: 50px 0;
+  }
+  .car .container .sliderUp h1 {
+    font-size: 36px;
+  }
+  .car .container .sliderUp h2 {
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .car .container .sliderDown div {
+    max-width: 100%;
+    padding: 30px 10px;
+  }
+  .car .container .sliderDown div img {
+    width: 80px;
+  }
+  .car .container .sliderDown div h2 {
+    font-size: 18px;
+  }
+  .car .container .sliderDown div p {
+    font-size: 14px;
+    padding-top: 10px;
+  }
   .car .container .sliderUp h2 {
     width: 100% !important;
   }
@@ -1070,6 +1158,11 @@ span {
     padding: 100px 0px 50px 0px !important;
   }
   .header_slider .slider .item p {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .show .show_right_img {
     display: none;
   }
 }/*# sourceMappingURL=scss.css.map */

@@ -1,119 +1,36 @@
 window.onscroll = function () { myFunction() }
 
-if (window.innerWidth > 716) {
-    function myFunction() {
-        if (document.documentElement.scrollTop > 400) {
-            document.getElementById("div_mercedes").classList = "sliderUp"
+function myFunction() {
+    const elementsToAnimate = [
+        { id: "div_mercedes", threshold: 400, className: "sliderUp" },
+        { id: "about_us_left", threshold: 200, className: "sliderDown" },
+        { id: "relative", threshold: 900, className: "sliderDown" },
+        { id: "show_left", threshold: 2200, className: "sliderDown" },
+        { id: "show_right", threshold: 2300, className: "sliderUp" },
+        { id: "car_top", threshold: 3200, className: "sliderUp" },
+        { id: "car_botton", threshold: 3500, className: "sliderDown" },
+        { id: "small_left", threshold: 4100, className: "sliderDown" },
+        { id: "small_between", threshold: 4100, className: "sliderUp" },
+        { id: "small_right", threshold: 4100, className: "sliderDown" },
+        { id: "sign_up", threshold: 4600, className: "sliderUp" },
+        { id: "full_name", threshold: 4700, className: "sliderDown" },
+        { id: "email1", threshold: 4800, className: "sliderDown" },
+        { id: "phone1", threshold: 4900, className: "sliderDown" },
+        { id: "sign_up_button", threshold: 5000, className: "sliderDown" },
+        { id: "contact", threshold: 4700, className: "sliderDown" },
+        { id: "contact1", threshold: 4700, className: "sliderDown" },
+        { id: "contact2", threshold: 4700, className: "sliderDown" }
+    ]
+
+    elementsToAnimate.forEach(element => {
+        const el = document.getElementById(element.id)
+        if (el) {
+            const rect = el.getBoundingClientRect()
+            const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+            if (isVisible) {
+                el.classList.add(element.className)
+            }
         }
-        if (document.documentElement.scrollTop > 200) {
-            document.getElementById("about_us_left").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 900) {
-            document.getElementById("relative").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 2200) {
-            document.getElementById("show_left").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 2300) {
-            document.getElementById("show_right").classList = "sliderUp"
-        }
-        if (document.documentElement.scrollTop > 3200) {
-            document.getElementById("car_top").classList = "sliderUp"
-        }
-        if (document.documentElement.scrollTop > 3500) {
-            document.getElementById("car_botton").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 4100) {
-            document.getElementById("small_left").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 4100) {
-            document.getElementById("small_between").classList = "sliderUp"
-        }
-        if (document.documentElement.scrollTop > 4100) {
-            document.getElementById("small_right").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 4600) {
-            document.getElementById("sign_up").classList = "sliderUp"
-        }
-        if (document.documentElement.scrollTop > 4700) {
-            document.getElementById("full_name").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 4800) {
-            document.getElementById("email1").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 4900) {
-            document.getElementById("phone1").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 5000) {
-            document.getElementById("sign_up_button").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 5500) {
-            document.getElementById("contact").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 5500) {
-            document.getElementById("contact1").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 5500) {
-            document.getElementById("contact2").classList = "sliderDown"
-        }
-    }
-} else {
-    function myFunction() {
-        if (document.documentElement.scrollTop > 400) {
-            document.getElementById("div_mercedes").classList = "sliderUp"
-        }
-        if (document.documentElement.scrollTop > 200) {
-            document.getElementById("about_us_left").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 900) {
-            document.getElementById("relative").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 3200) {
-            document.getElementById("show_left").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 3800) {
-            document.getElementById("show_right").classList = "sliderUp"
-        }
-        if (document.documentElement.scrollTop > 4500) {
-            document.getElementById("car_top").classList = "sliderUp"
-        }
-        if (document.documentElement.scrollTop > 4600) {
-            document.getElementById("car_botton").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 6000) {
-            document.getElementById("small_left").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 6000) {
-            document.getElementById("small_between").classList = "sliderUp"
-        }
-        if (document.documentElement.scrollTop > 6000) {
-            document.getElementById("small_right").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 6700) {
-            document.getElementById("sign_up").classList = "sliderUp"
-        }
-        if (document.documentElement.scrollTop > 6800) {
-            document.getElementById("full_name").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 6900) {
-            document.getElementById("email1").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 7000) {
-            document.getElementById("phone1").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 7100) {
-            document.getElementById("sign_up_button").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 7500) {
-            document.getElementById("contact").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 7500) {
-            document.getElementById("contact1").classList = "sliderDown"
-        }
-        if (document.documentElement.scrollTop > 7500) {
-            document.getElementById("contact2").classList = "sliderDown"
-        }
-    }
+    })
 }
-
-
