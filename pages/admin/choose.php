@@ -13,6 +13,9 @@
         <div class="container">
             <?php require_once ("../../include/db.php");
             session_start();
+            if (!isset($_SESSION['admin'])) {
+                header('Location: /');
+            }
             ?>
             <a href="/">Back</a>
             <div class="clients_orders">

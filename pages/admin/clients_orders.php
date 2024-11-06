@@ -14,7 +14,11 @@
             <div class="clients_a">
                 <a href="choose.php">Back</a>
             </div>
-            <?php require_once ("../../include/db.php");
+            <?php require_once("../../include/db.php");
+            session_start();
+            if (!isset($_SESSION['admin'])) {
+                header('Location: /');
+            }
             $orders = mysqli_query($esql, "SELECT * FROM `orders`");
             foreach ($orders as $order) { ?>
                 <div class="client">

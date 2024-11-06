@@ -15,7 +15,11 @@
                 <a href="choose.php">Back</a>
             </div>
             <?php
-            require_once ("../../include/db.php");
+            require_once("../../include/db.php");
+            session_start();
+            if (!isset($_SESSION['admin'])) {
+                header('Location: /');
+            }
             $cars = mysqli_query($esql, "SELECT * FROM `cars`");
             foreach ($cars as $car) {
                 ?>

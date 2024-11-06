@@ -9,7 +9,11 @@
 </head>
 
 <body>
-    <?php require_once ("../../include/db.php");
+    <?php require_once("../../include/db.php");
+    session_start();
+    if (!isset($_SESSION['admin'])) {
+        header('Location: /');
+    }
     $id = $_REQUEST['id'];
     $car = mysqli_query($esql, "SELECT * FROM `cars` WHERE `id` = '$id'");
     $resalt = mysqli_fetch_array($car)
@@ -77,7 +81,8 @@
                     </div>
                     <button>Submit</button>
                 </form>
-                <form action="handl/download_car_image.php" method="post" enctype="multipart/form-data" id="extra_image">
+                <form action="handl/download_car_image.php" method="post" enctype="multipart/form-data"
+                    id="extra_image">
                     <div>
                         <label for="file">Extra Image</label>
                         <input type="file" name="file">
